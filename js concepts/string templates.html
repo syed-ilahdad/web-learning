@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH TEMPLATES</title>
+</head>
+<body>
+    <h2>STRING TEMPLATES | BACKTICKS SYNTAX</h2>
+
+    <script>
+
+        let display=`"hi there"`;
+        console.log(display);
+
+        // MULTILINE STRINGS 
+        let txt=
+        `name 
+        class
+        section
+        id`;
+        console.log(txt)
+
+        // interpolation($)
+        let msg =`${display}what is your
+        ${txt}`;
+        console.log(msg)
+    </script>
+</body>
+</html>

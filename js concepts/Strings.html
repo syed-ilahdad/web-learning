@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings |</title>
+</head>
+
+<body>
+    <h1>Strings!!</h1>
+    <p id="prnt"></p>
+    <p id="disp"></p>
+    <p id="singleq.."></p>
+    <p id="doubleq.."></p>
+    <p id="ts"></p>
+    <p id="nl"></p>
+    <p><strong> length</strong></p>
+    <p id="strlen"> </p>
+    <p id="length"></p>
+    <p id="newobj"></p>
+    <p><a href="https://www.w3schools.com/js/js_strings.asp">click here</a> to learn more on strings</p>
+    <script>
+
+        let str = "this string is in double qoutes"
+        console.log(str)
+        document.getElementById('prnt').innerHTML = str;
+
+        // **!!NOT WORKING!!**
+        // document.getElementsByClassName('prnt');
+        // str[0].innerHTML = "hi";
+
+
+        let wrd = 'this string is in single qoutes'
+        console.log(wrd)
+        document.getElementById("disp").innerHTML = wrd;
+
+
+
+        txt=" ' can be displayed in double qoutes"+' \'also represented by adding backslash ';
+        console.log(txt)
+        document.getElementById('singleq..').innerHTML=txt;
+        
+        
+        dqs=' " can be displayed in single qoutes'+" \"also represented by adding backslash ";
+        console.log(dqs)
+        document.getElementById('doubleq..').innerHTML=dqs;
+        
+
+        tab="this is\t tab space"
+        console.log(tab)
+        //!!**not working**!!
+        document.getElementById("ts").innerHTML=tab 
+
+        newline='this creates \n new line'
+        console.log(newline)
+        //!!**not working**!!
+        document.getElementById("nl").innerHTML=newline 
+
+
+
+
+
+        const len= " length of string is ";
+        console.log(len)
+        console.log(len.length)
+        
+        document.getElementById('strlen').innerHTML=len;
+        document.getElementById('length').innerHTML=len.length;
+
+
+
+        let obj=new String;
+        obj="this is object"
+        console.log(obj);
+        document.getElementById('newobj').innerHTML=obj;
+
+        //  Boolean forms in strings using == ===
+        // to learn in detail go to the site
+        x="syed";
+        y='syed';
+        console.log(x==y)
+
+        console.log(x===y)
+
+
+
+
+// !!!!****NOT WORKING*****!!!! 
+        //    creating function to display in html or in cosole is not an efficient way 
+        // because we should create the every time to display
+
+        // console.log(play(str, "prnt"))
+        // function play(obj, id) {
+        //     console.log(obj);
+        //     document.getElementById(id).innerHTML = obj
+        // }
+    </script>
+</body>
+
+</html>

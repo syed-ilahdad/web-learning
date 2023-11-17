@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tags | in head |in body | external javascript</title>
+
+
+    <!-- in head file -->
+    <script>
+        function func() {
+            document.getElementById("funcjs").innerHTML = "hi";
+        }
+
+    </script>
+
+
+
+<!-- attaching external js   -->
+
+    <script src="introduction.js"></script>
+
+
+    <!-- <script src="javascript\introduction.js"></script> -->
+    <!-- ^^^^^^^^ this is attaching path of the js ^^^^^^^^^ -->
+</head>
+
+<body>
+
+
+    <!-- in body  -->
+    <h1>writing javascript</h1>
+    <!--this is creation of fuction..... not important now -->
+    <div id="funcjs"> it is a function </div>
+    <button type="button" onclick="func()">try</button>
+
+    <script>
+        var text = " iam text"
+        console.log(text)
+    </script>
+
+    <button><a href="">to learn more</a></button>
+
+</body>
+
+</html>

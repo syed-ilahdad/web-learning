@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string methods</title>
+</head>
+<body>
+        <h1>METHODS IN STRING IN J.S</h1>
+            <p id="ele"></p>
+            <p id="length"></p>
+            <p id="slc"></p>
+            <p id="negslc"></p>
+            <p id="substng"></p>
+            <p id="replace"></p>
+
+            <h3>Their are more important methods like</h3>
+
+            <ul>
+                <li>toUpperCase():
+                    converts whole STRING into uppercase
+                </li>
+                <li>toLowerCase():
+                    converts whole STRING into lower case
+                </li>
+                <li>concat(_,__): 
+                    concats two STRING  or OBJECT 
+                </li>
+                <li>trim():
+                    trims spaces form start and end of the sting
+                </li>
+                <li>charCodeAt(_index_):
+                    shows the character at that specific index
+                </li>
+            </ul>
+
+        <script>
+            str ="this is slicing"
+            len=str.length
+            console.log(str);
+            console.log(len);
+            document.getElementById("length").innerHTML=len;
+            document.getElementById("ele").innerHTML=str;
+
+            // slicing cuts the string according to its index
+
+            slice=str.slice(8,16);
+            console.log(slice);
+            document.getElementById("slc").innerHTML=slice;
+
+            negetiveslice=str.slice(-10,-16);
+            console.log(negetiveslice);
+            document.getElementById("negslc").innerHTML=negetiveslice;
+
+            // substring is a slicing method in which negetive numbers index are termed as 0 index
+
+            subsr=str.substring(0,4);
+            console.log(subsr);
+            document.getElementById("substng").innerHTML=subsr;
+
+            // replacing replaces the specific string mentioned
+
+            rep=str.replace("slicing","replacing")
+            console.log(rep)
+            document.getElementById("replace").innerHTML=rep;
+
+
+        </script>
+
+        <center><p style="font-weight: bold; font-size: larger ;color: crimson;" >to learn more on methods in string <a href="https://www.w3schools.com/js/js_string_methods.asp" target="_blank"> click here </a></p></center>
+
+</body>
+</html>

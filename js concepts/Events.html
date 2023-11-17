@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <style>
+        #date{
+            margin:50px, 300px,300px,50px;
+            padding: 10px;
+            font-size: larger;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Events</h1>
+    <p>>>>events is an html attribute give a function to the tag</p>
+    <h3>there are many events more discussed in the below link</h3>
+    <button><a href="https://www.w3schools.com/js/js_events.asp" target="_blank">click here </a> to learn more on events in js</button>
+    
+<div >
+    <span id="date"> check out current date on click on this button</span>
+    <button onclick="document.getElementById('date').innerHTML= Date()"> date</button>    
+</div>
+<div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+<!-- ****!!!!NOT WORKING -->
+<button onclick="func(alert)">click here</button>
+<script>
+    function func(alert){
+        alert="alearting";
+    }
+</script>
+
+<div>
+    <button onclick="this.innerHTML=Date()">button date </button>
+</div>
+
+<p id="evnt">hi there</p>
+<button onchange="document.getElementById('evnt').innerHTML='hello World'"> change</button>
+
+
+
+
+</body>
+</html>

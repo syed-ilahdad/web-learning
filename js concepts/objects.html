@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS</title>
+</head>
+<body>
+    <h1>Objects!!</h1>
+<h3>open  console terminal to see js display</h3>
+<button><a href="https://www.w3schools.com/js/js_objects.asp" target="_blank">click here</a> to learn more on ojects in js</button>
+    <script>
+            
+        // creating objects 
+        
+        // syntax[datatype objectname = value] 
+
+        var obj = "phone";
+
+
+        console.log(obj)
+
+
+        var phone ={
+            brand:"redmi",
+            storage:"64GB",
+            RAM:"4GB",
+            // creating function in object 
+            color:function(){
+            c1=" red";
+            c2=" white";
+            c3=" black";
+            c4=" dark_blue";
+            return "available colors are :"+ c1+c2+c3+c4;
+        } }
+        console.log(phone)
+
+
+        // phone["phone"]
+        
+        // phone
+        
+            console.log("the brand of your phone is     :" + phone.brand)
+            /*"fuction colors accsess"*/
+            console.log(phone.color);
+
+            console.log(phone.storage+this. phone.RAM)
+           /* In JavaScript, the this keyword refers to an object.
+
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.*/
+        </script>
+    
+
+</body>
+</html>

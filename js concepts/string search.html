@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRING SEARCH</title>
+</head>
+<body>
+    <h1>SEARCHING STRINGS</h1>
+    <h3>methods</h3>
+    <ul>
+        <li id="index">indexOf()</li>
+        <li id="lastindex"> lastIndexof()</li>
+        <li id="startindex">start index </li>
+    </ul>
+
+    <script>
+        str="this s a string";
+
+        // indexOf()
+
+        i=str.indexOf("s")
+        console.log(i);
+        document.getElementById('index').innerHTML=i;
+
+        // lastIndexOf()
+
+        li=str.lastIndexOf("s");
+        console.log(li)
+        document.getElementById('lastindex').innerHTML=li;
+
+        // startWith() is a boolean expression which checks the the starting letter
+        
+        si=str.startsWith("i");
+        console.log(si)
+        document.getElementById('startindex').innerHTML=si;
+        
+        console.log(si==li)
+    </script>
+    <center><p style="font-weight: bold; font-size: larger ;color: crimson;" >to learn more on methods in string searching <a href="https://www.w3schools.com/js/js_string_search.asp" target="_blank"> click here </a></p></center>
+</body>
+</html>

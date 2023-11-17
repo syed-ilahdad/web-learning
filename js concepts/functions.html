@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNCTIONS</title>
+</head>
+<body>
+    <h1>functons in js</h1>
+    <p>!!! important note !!!</p>
+    <p>functions must be invoked in body of html</p>
+    <p> addition function invoked</p>
+    <p id="add"> is sum invoked from function</p>
+    
+<p id="alert"></p>
+
+    <script>
+        
+        // calling function to write in console and giving paramerters
+        console.log(func(3,5));
+
+        
+        // creating function
+        function func(a,b){
+            return a+b;
+        }
+        // calling function to write in html and giving paramerters
+        document.getElementById("add").innerHTML=func(3,9);
+
+        // creating alert function 
+        function alertfunc(a){
+            window.alert("!!alert")
+            return a;
+        }
+        // calling alert function
+        // calling function to write in html and giving paramerters
+        document.getElementById("alert").innerHTML=alertfunc("this  is alert function");
+
+        function a(){
+            alert("this is also alert but without window keyword")
+            return 8*5;
+        }
+        
+        console.log(a())
+    </script>
+</body>
+</html>

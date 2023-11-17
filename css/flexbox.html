@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            background-color: gray;
+            border: 5px solid lightblue;
+            height: 300PX;
+            display: flex;
+
+            /* properties for flex container */
+            
+            /* direction */
+            flex-direction: row; /* flex-direction: of a container is row by default */
+            /* flex-direction: column-reverse; 
+            flex-direction: row-reverse;
+            flex-direction: column; */
+            
+            /* wrap */
+            flex-wrap: nowrap;
+            flex-wrap: wrap-reverse;/*  wraps up the items in contianer according to the size of device in bottom side of the divice */
+            flex-wrap: wrap;/*  wraps up the items in contianer according to the size of device in top side of the divice */
+            
+            /* shorthand for direction and wrap */
+            flex-flow: row wrap;
+
+            /* justify property */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content:space-evenly;
+
+            /* aligning-items */
+            align-items: center;
+            align-items: stretch;
+            align-items: flex-start;
+            align-items: flex-end;
+
+        }
+        .parent{
+            width: 100px;
+            height: 100px;
+            border: 2px solid green;
+            background-color: lightgreen;
+            padding: 10px;
+            margin: 5px;
+        }/* properties of flex item */
+        #item1{
+            /* order */
+            order: 5;/* higher the order value higher the placement of item according to other repective items */
+        }
+        #item2{
+            /* flex grow */
+            flex-grow: 3;/*  the more the value the more rating to grow size, with respect to other items in differnt sizes divices */
+            flex-shrink: 1;/*  the more the value the more rating to shrink size, with respect to other items in differnt sizes divices */
+            flex-basis: 30px ;/* when flex direction is row it sets the width*/
+                /* when flex direction is column it sets the hieght*/
+
+        }
+        #item3{
+            /* short hand for flex grow,shrink,basis */
+            flex: 2 2 50px;
+
+        }
+        #item4{
+            /* item flex align-self property */
+             align-self: center;/* changes position of item to center opposite with respect to its flex-direction: setted  */
+           align-self: flex-end;
+        }
+    </style>
+</head>
+<body><h2>flexbox</h2>
+    <div class="container">
+    <div class="parent" id="item1">1 </div>
+    <div class="parent" id="item2">2</div>
+    <div class="parent" id="item3">3</div>
+    <div class="parent" id="item4">4</div>
+</div>
+</body>
+</html>

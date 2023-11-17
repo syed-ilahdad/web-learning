@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing media queries</title>
+    
+</head>
+<style>
+        *{
+            border: 3px solid black ;
+        }
+        .container{
+            /* background-color: aqua; */
+            text-align: center;
+            font-size: 2em;
+        }
+        @media (width:414px) and (height:896px){
+            #heading1{
+                background-color: gold;
+            }
+        }
+        @media(max-width:10000px)and (max-height:10000px){
+            #heading2:hover{
+                
+                background-color:red;
+                color: white;
+                
+            }
+
+        }
+        @media (width:768px) and (height:1024px) {
+            #heading3{
+                background-color:hotpink;
+                color: white;
+            }
+        
+        }
+        
+        @media (width:393px) and (height:851px) {
+            #heading4{
+                background-color: black;
+                color: white;
+            }
+        
+        }
+        
+    </style>
+<body>
+    <div class="container">
+        <div id="heading1">iphone Xr</div>
+        <div id="heading2">desktop </div>
+        <div id="heading3">ipad mini</div>
+        <div id="heading4">pixel 5</div>
+    </div>
+</body>
+
+</html>

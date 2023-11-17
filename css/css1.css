@@ -1,0 +1,34 @@
+#blur {
+    /* blurring the text */
+    color: transparent;
+    /*this is a transparent color tag*/
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* this is a shadow tag */
+}
+
+div {
+    color: blue;
+}
+
+a {
+    background-color: yellow;
+}
+
+#name {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /*  this is a shadowtag */
+    border: 2px solid red;
+}
+
+.button {
+    background-color: #24bbe5;
+    /* Green */
+    border-radius: 100px;
+    border-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

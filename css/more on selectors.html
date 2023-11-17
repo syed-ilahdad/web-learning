@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+</head>
+<style>
+    div a{
+        color: red;
+    }
+    /* tag(div) containing tag(p) containing tag(a) */
+    div p a{
+        background-color: cyan;
+    }
+    /* the tag(a) existing dierectly in after the pretag(div) */
+    div > a{
+        background-color: greenyellow;
+    } 
+    /* siblings of the pretag(div) are showed(a) */
+    div + a{
+        color: blue;
+    }
+
+</style>
+<body>
+    <h2>selectors</h2>
+    <div>
+        <p>paragraph <a> anchor</a></p>
+        <a>anchor out</a>
+    </div>
+    <a> anchor out of div</a>
+</body>
+</html>

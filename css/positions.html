@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        #whole{
+            background-color: aqua;
+            height: 5000px;
+            width: 5000px;
+        }
+        .all {
+            background-color: gold;
+            border: 3px solid red;
+            border-radius: 10px;
+            width: 300px;
+            height: 100px;
+            color: brown;
+            margin: 50px;
+            display: inline-block;
+        }
+
+        #position1 {
+            position: static;
+        }
+
+        #position2 {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+        }
+
+        #position3 {
+            position: relative;
+            top: 34px;
+            left: 30px;
+        }
+
+        #position4 {
+            position: fixed;
+            top: 10px;
+            left: 30px;
+        }
+
+        #position5 {
+            position: sticky;
+            top: 30px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>        <h2 class="position"> POSITIONS in css</h2>
+
+    <div id="whole">
+        <div class="all" id="position1">static
+            <p>default position</p>
+        </div>
+        <div class="all" id="position2">relative
+            <p>position of the element is changed</p>
+            
+        </div>
+
+        <div class="all" id="position3">absolute
+           <p>position of the element is changed with respect to its parent element</p>
+        </div>
+        <div class="all" id="position4">fixed
+            <p>position of the element is fixed in sheet when scrolled </p>
+           
+        </div>
+        <div class="all" id="position5">sticky
+            <p>position of the element is sticked to a particular position </p>
+            
+        </div>
+    </div>
+</body>
+
+</html>

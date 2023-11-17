@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    
+    <form action="codeofduty.com">
+        <div><label for="fname">First Name: </label>
+            <input type="text" name="first name" id="fname" required>
+        </div>
+        <br>
+        <div><label for="lname">Last Name: </label>
+            <input type="text" name="last name" id="lname" required>
+        </div>
+        <br>
+        <div><label for="mail">E mail: </label>
+            <input type="email" name="email" id="mail" required>
+        </div>
+        <br>
+    
+        <div><label for="phone">Phone no.: </label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        </div>
+        <br>
+        <div>Gender:
+            <label for="male">Male </label>
+            <input type="radio" name="gender" required id="male">
+            <label for="female">FeMale </label>
+            <input type="radio" name="gender" required id="female">
+        </div>
+        <br>
+        <div>
+            <label for="dob">DateOfBirth: </label>
+            <input type="date" name="date" id="dob" required>
+        </div>
+        <br>
+        <div>
+            <label for="address">Address:</label>
+            <textarea name="enter your address" id="address" cols="30" rows="5" required></textarea>
+
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit">
+        </div>
+        <br>
+
+
+    </form>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="shared_vars.css">
+    <h2> CLICK ON THESE LINKS TO KNOW MORE</h2>
+    <div><a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">forms tags</a></div>
+    <a href="https://www.geeksforgeeks.org/html-forms/" target="_parent">forms geeksforgeeks</a>
+
+</body>
+
+</html>

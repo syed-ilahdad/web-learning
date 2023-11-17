@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings | string methods</title>
+</head>
+<body>
+    <h2>stings</h2>
+    <div id="container"></div>
+</body>
+    <script>
+        name="syed"
+        course =' IT';
+        roll=` 160920737031`;
+        console.log(name+course+roll);
+    
+        info=`I'm ${name} my course is ${course} and id is ${roll}`
+        console.log(info)
+    
+        // collage="i'm ${name}"; ""and ''doest support ${}
+        console.log(info.length)
+        console.log(0.1+0.2)
+        console.log("hi there! \n this is moving to nxt line(enter space)\t this is tab space")
+        
+        var y=new String('this is a string through creating object')
+        console.log(y)
+        
+        // this type of changes can be made only when the html code is runned
+        // so the preferd way to write js is to write after the body content 
+        document.getElementById('container').innerHTML = '<h3>this is changed through java script</h3>'
+        
+    
+     
+    
+    </script>
+</html>

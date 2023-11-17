@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays | objects</title>
+</head>
+<body>
+    <h2>Arrays</h2>
+    <script>
+        let arr=["this ","is",'array',1,null,undefined,false]
+        console.log(arr)
+    // accessing arrays
+        console.log(arr[2]) //accesing through index
+    // length
+        console.log(arr.length)
+
+        let arrobj=new Array(1,"array object",true);
+        // let arrobj=new Array(30); //creating multiple empty contents in array
+        console.log(arrobj)
+        console.log(arrobj.length)
+        // pushing Elements
+        arrobj.push("pushed")
+        // pop
+        arrobj.pop();
+        console.log(arrobj);
+
+
+    </script>
+
+    <h2>objects</h2>
+    <script>
+        let obj={
+            name:"object",
+            "data type":'all',
+            user:"syed"
+        }
+
+        console.log(obj);
+    // accessing objects
+        console.log(obj['data type']); //FOR spaced keys and for all
+        console.log(obj.name)
+    // length
+        console.log(obj.length)
+    
+    console.log(obj)
+    </script>
+</body>
+</html>
